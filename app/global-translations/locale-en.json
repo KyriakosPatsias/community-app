@@ -670,6 +670,7 @@
 
     "#Buttons": "..",
     "label.button.createclient": "Create Client",
+    "label.button.importclients": "Import Clients",
     "label.button.print": "Print",
     "label.button.viewprint": "Generate Report",
     "label.button.savingdetails": "Saving Details",
@@ -2484,7 +2485,23 @@
     "label.anchor.createtaxgroup":"Create Tax Group",
     "label.anchor.edittaxgroup":"Edit Tax Group",
     "label.anchor.viewtaxgroup":"View Tax Group",
-
+    "label.anchor.importoffices":"Import Offices",
+    "label.anchor.importusers":"Import Users",
+    "label.anchor.importgroups":"Import Groups",
+    "label.anchor.importoffices":"Import Offices",
+    "label.anchor.importloanaccounts":"Import Loan Accounts",
+    "label.anchor.importsavingsaccounts":"Import Savings Accounts",
+    "label.anchor.importfdaccounts":"Import FD Accounts",
+    "label.anchor.importcoa":"Import COA",
+    "label.anchor.importstaff":"Import Staff",
+    "label.anchor.importclients":"Import Clients",
+    "label.anchor.importcenters":"Import Centers",
+    "label.anchor.importloanrepayments":"Import Loan Repayments",
+    "label.anchor.importsavingstransactions":"Import Savings Transactions",
+    "label.anchor.importfdtransactions":"Import FD Transactions",
+    "label.anchor.importrdtransactions":"Import RD Transactions",
+    "label.anchor.importjournalentries":"Import Journal Entries",
+    "label.anchor.importjournalentries":"Import Journal Entries",
 
 
     "#Inputs": "..",
@@ -2530,6 +2547,7 @@
     "label.view.taxcomponent" : "Define Tax components",
     "label.view.taxgroup" : "Define Tax Groups",
     "label.view.smscampaigns" : "Define SMS Campaigns for Organization",
+    "label.view.bulkimport" : "Bulk data import using excel spreadsheet templates for clients, offices, etc.",
 
     "#Enumeration & Error Messages": "..",
     "validation.msg.currencies.currencies.cannot.be.empty": "You must select at least one currency that is 'allowed' for your organization.",
@@ -3108,6 +3126,7 @@
     "label.anchor.createrecurringdepositproduct":"Create Recurring Deposit Product",
     "label.anchor.smscampaings":"SMS Campaigns",
     "label.anchor.createcampaign": "Create Campaign",
+    "label.anchor.bulkimport": "Bulk import",
 
     "#Inputs": "..",
     "label.input.selectproduct": "Select product",

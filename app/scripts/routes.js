@@ -923,7 +923,13 @@
             .when('/addfamilymembers/:clientId/', {
                 templateUrl: 'views/clients/addfamilymembers.html'
             })
-            ;
+            .when('/bulkimport', {
+                templateUrl: 'views/organization/bulkimport/bulkimport.html'
+            })
+            .when('/bulkimportclients', {
+                templateUrl: 'views/organization/bulkimport/bulkimportclients.html'
+            })
+        ;
         $locationProvider.html5Mode(false);
     };
     mifosX.ng.application.config(defineRoutes).run(function ($log) {

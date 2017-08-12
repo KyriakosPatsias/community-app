@@ -294,8 +294,9 @@ define(['Q', 'underscore', 'mifosX'], function (Q) {
             'notification/NotificationsController',
             'configurations/AddressFormController',
             'client/EditFamilyMemberController',
-            'client/AddFamilyMembersController'
-
+            'client/AddFamilyMembersController',
+            'organization/bulkimport/BulkImportController',
+            'organization/bulkimport/BulkImportClientsController',
         ],
         filters: [
             'StatusLookup',

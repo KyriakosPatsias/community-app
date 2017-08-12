@@ -1,0 +1,45 @@
+<div class="col-md-12" ng-controller="BulkImportClientsController">
+    <ul class="breadcrumb">
+        <li><a href="#/clients">{{'label.anchor.clients' | translate}}</a></li>
+        <li class="active">{{'label.anchor.importclients' | translate}}</li>
+    </ul>
+    <api-validate></api-validate>
+
+    <div style="margin-top:20px;" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Client Template</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <form name="bulkImportClients" class="form-inline ng-dirty ng-invalid ng-invalid-required" role="form" rc-submit="submitTemplate()">
+                    <label>Client Type:&nbsp;</label>
+                    <div class="form-group">
+                        <select name="clientType" class="form-control ng-pristine ng-valid ng-valid-required" ng-model="formData.clientType" value required>
+                            <option>Individual</option>
+                            <option>Corporate</option>
+                        </select>
+                    </div>
+                    <button style="margin-left:20px;" type="button" class="form-control btn btn-primary"  ng-csv="submitTemplate" filename="clienttemplate.csv" field-separator=",">Get Template</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Import Clients</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <form class="form-inline ng-dirty ng-invalid ng-invalid-required" role="form">
+                    <label>Select Excel File:&nbsp;</label>
+                    <button type="button" class="form-control btn btn-default">Browse...</button>
+                    <button style="margin-left:10px;" type="button" class="form-control btn btn-primary">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <form ng-submit="search()" class="form-horizontal">
+    </form>
+</div>
