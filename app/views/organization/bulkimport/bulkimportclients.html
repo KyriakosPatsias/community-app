@@ -19,7 +19,8 @@
                             <option>Corporate</option>
                         </select>
                     </div>
-                    <button style="margin-left:20px;" type="button" class="form-control btn btn-primary"  ng-csv="submitTemplate" filename="clienttemplate.csv" field-separator=",">Get Template</button>
+                    <button style="margin-left:20px;" type="button" class="form-control btn btn-primary"  ng-csv="bulkImportTemplate">{{'label.button.bulkimporttemplate'
+                        | translate }}</button>
                 </form>
             </div>
         </div>
@@ -32,8 +33,10 @@
             <div class="form-group">
                 <form class="form-inline ng-dirty ng-invalid ng-invalid-required" role="form">
                     <label>Select Excel File:&nbsp;</label>
-                    <button type="button" class="form-control btn btn-default">Browse...</button>
-                    <button style="margin-left:10px;" type="button" class="form-control btn btn-primary">Upload</button>
+                    <button type="button" class="form-control btn btn-default">{{'label.button.browse'
+                        | translate }}</button>
+                    <button style="margin-left:10px;" type="button" class="form-control btn btn-primary">{{'label.button.upload'
+                        | translate }}</button>
                 </form>
             </div>
         </div>

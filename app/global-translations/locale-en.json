@@ -317,6 +317,8 @@
     "label.button.dividends": "Dividends",
     "label.button.postdividends": "Post Dividends",
     "label.button.proceed": "Proceed",
+    "label.button.bulkimporttemplate": "Get Template",
+    "label.button.browse": "Browse...",
 
     "#Misc Labels": "..",
     "label.uniquelyidentifiedwithid": "Uniquely identified with Id",
