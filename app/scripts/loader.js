@@ -45,7 +45,8 @@
             'ng-scrollbar':'../bower_components/ng-scrollbar/dist/ng-scrollbar',
             'ng-scrollbar-css':'../bower_components/ng-scrollbar/dist/ng-scrollbar.css',
             'styles-css': '../styles/styles.css',
-            'ui-config': '../scripts/config/UIconfig.json'
+            'ui-config': '../scripts/config/UIconfig.json',
+            'file-saver': '../bower_components/file-saver/FileSaver.min'
         },
         shim: {
             'angular': { deps: ['jquery','chosen.jquery.min'],exports: 'angular' },
@@ -111,7 +112,8 @@
                     'webcam-directive',
                     'angular-wizard',
                     'angular-utils-pagination',
-                    'ng-scrollbar'
+                    'ng-scrollbar',
+                    'file-saver'
                 ],
                 exports: 'mifosX'
             }

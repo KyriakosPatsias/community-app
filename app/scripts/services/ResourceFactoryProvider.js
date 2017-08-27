@@ -77,8 +77,8 @@
                     clientIdenfierResource: defineResource(apiVer + "/clients/:clientId/identifiers/:id", {clientId: '@clientId', id: '@id'}, {
                         get: {method: 'GET', params: {}}
                     }),
-                    clientBulkImportResource: defineResource(apiVer + "clients/bulkimporttemplate", {}, {
-                        get: {method: 'GET', params: {}}
+                    clientBulkImportResource: defineResource(apiVer + "/clients/bulkimporttemplate", {}, {
+                        get: {method: 'GET', responseType: 'arraybuffer', transformResponse: function(data, headersGetter) { return { data : data }}, params: {}}
                     }),
 
                     surveyResource: defineResource(apiVer + "/surveys", {}, {
