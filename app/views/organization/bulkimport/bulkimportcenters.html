@@ -1,0 +1,39 @@
+<div class="col-md-12" ng-controller="BulkImportCentersController">
+    <ul class="breadcrumb">
+        <li><a href="#/centers">{{'label.anchor.centers' | translate}}</a></li>
+        <li class="active">{{'label.anchor.importcenters' | translate}}</li>
+    </ul>
+    <api-validate></api-validate>
+
+    <div style="margin-top:20px;" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Center Template</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <form name="bulkImportCenters" class="form-inline ng-dirty ng-invalid ng-invalid-required" role="form" rc-submit="submitCenterTemplate()">
+                    <button style="margin-left:20px;" type="button" class="form-control btn btn-primary" ng-click="getCenterTemplate()">{{'label.button.bulkimporttemplate'
+                        | translate }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Import Centers</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <form class="form-inline ng-dirty ng-invalid ng-invalid-required" role="form">
+                    <label>{{'label.input.selectexcelfile' | translate}}:&nbsp;</label>
+                    <input type="file" accept=".xls,.xlsx"  ng-model="uploadfile" class="form-control btn btn-default">
+                    <button style="margin-left:10px;" type="button" class="form-control btn btn-primary" ng-click="upload()">{{'label.button.upload'| translate }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+    <form ng-submit="search()" class="form-horizontal">
+    </form>
+</div>

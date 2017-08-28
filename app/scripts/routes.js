@@ -929,6 +929,12 @@
             .when('/bulkimportclients', {
                 templateUrl: 'views/organization/bulkimport/bulkimportclients.html'
             })
+            .when('/bulkimportoffices', {
+                templateUrl: 'views/organization/bulkimport/bulkimportoffices.html'
+             })
+             .when('/bulkimportcenters', {
+                templateUrl: 'views/organization/bulkimport/bulkimportcenters.html'
+             })
         ;
         $locationProvider.html5Mode(false);
     };

@@ -296,7 +296,9 @@ define(['Q', 'underscore', 'mifosX'], function (Q) {
             'client/EditFamilyMemberController',
             'client/AddFamilyMembersController',
             'organization/bulkimport/BulkImportController',
-            'organization/bulkimport/BulkImportClientsController'
+            'organization/bulkimport/BulkImportClientsController',
+            'organization/bulkimport/BulkImportOfficesController',
+            'organization/bulkimport/BulkImportCentersController'
         ],
         filters: [
             'StatusLookup',

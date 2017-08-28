@@ -36,9 +36,9 @@
                     </form>
                 </div>
                 <div class="col-sm-2">
-                    <a href="#/createclient" class="btn btn-primary pull-left" has-permission='CREATE_CLIENT'><i
+                    <a href="#/createclient" class="btn btn-primary" has-permission='CREATE_CLIENT'><i
                             class="fa fa-plus"></i> {{'label.button.createclient' | translate}}</a>
-                    <a href="#/bulkimportclients" class="btn btn-primary pull-right" has-permission='CREATE_CLIENT'><i
+                    <a href="#/bulkimportclients" class="btn btn-primary" has-permission='CREATE_CLIENT'><i
                             class="fa fa-upload"></i> {{'label.button.importclients' | translate}}</a>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </thead>
 
                 <tbody>
-                <tr dir-paginate="client in clients | orderBy:'displayName':reverse  | filter:filterText | itemsPerPage: clientsPerPage" class="pointer-main" 
+                <tr dir-paginate="client in clients | orderBy:'displayName':reverse  | filter:filterText | itemsPerPage: clientsPerPage" class="pointer-main"
                     total-items="totalClients">
                     <td class="pointer" data-ng-click="routeTo(client.id)">{{client.displayName}}</td>
                     <td class="pointer" data-ng-click="routeTo(client.id)">{{client.accountNo}}</td>

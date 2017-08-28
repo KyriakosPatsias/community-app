@@ -15,7 +15,7 @@
                     <label>Client Type:&nbsp;</label>
                     <div class="form-group">
                         <select name="clientType" class="form-control ng-pristine ng-valid ng-valid-required" ng-model="formData.clientType" value required>
-                            <option>Individual</option>
+                            <option selected="selected">Individual</option>
                             <option>Corporate</option>
                         </select>
                     </div>
@@ -32,11 +32,9 @@
         <div class="panel-body">
             <div class="form-group">
                 <form class="form-inline ng-dirty ng-invalid ng-invalid-required" role="form">
-                    <label>Select Excel File:&nbsp;</label>
-                    <button type="button" class="form-control btn btn-default">{{'label.button.browse'
-                        | translate }}</button>
-                    <button style="margin-left:10px;" type="button" class="form-control btn btn-primary">{{'label.button.upload'
-                        | translate }}</button>
+                    <label>{{'label.input.selectexcelfile' | translate}}:&nbsp;</label>
+                    <input type="file" id="file" accept=".xls,.xlsx"  class="form-control btn btn-default" ngf-select="onFileSelect($files)">
+                    <button style="margin-left:10px;" type="button" class="form-control btn btn-primary" ng-click="upload()">{{'label.button.upload'| translate }}</button>
                 </form>
             </div>
         </div>

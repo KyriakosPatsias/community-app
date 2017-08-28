@@ -41,6 +41,9 @@
                         getAllOfficesInAlphabeticalOrder: {method: 'GET', params: {orderBy: 'name', sortOrder: 'ASC'}, isArray: true},
                         update: { method: 'PUT'}
                     }),
+                    officeBulkImportResource: defineResource(apiVer + "/offices/bulkimporttemplate", {}, {
+                        get: {method: 'GET', responseType: 'arraybuffer', transformResponse: function(data, headersGetter) { return { data : data }}, params: {}}
+                    }),
                     clientResource: defineResource(apiVer + "/clients/:clientId/:anotherresource", {clientId: '@clientId', anotherresource: '@anotherresource', sqlSearch: '@sqlSearch'}, {
                         getAllClients: {method: 'GET', params: {limit: 1000, sqlSearch: '@sqlSearch'}},
                         getAllClientsWithoutLimit: {method: 'GET', params: {}},
@@ -398,6 +401,10 @@
                     }),
                     centerTemplateResource: defineResource(apiVer + "/centers/template", {}, {
                         get: {method: 'GET', params: {}}
+                    }),
+                    centerBulkImportResource: defineResource(apiVer + "/centers/bulkimporttemplate", {}, {
+                        get: {method: 'GET', responseType: 'arraybuffer', transformResponse: function(data, headersGetter) { return { data : data }}, params: {}},
+                        upload: {method: 'POST', transformRequest: angular.identity, headers: { 'Content-Type': undefined }}
                     }),
                     jobsResource: defineResource(apiVer + "/jobs/:jobId/:resourceType", {jobId: '@jobId', resourceType: '@resourceType'}, {
                         get: {method: 'GET', params: {}, isArray: true},
